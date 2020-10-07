@@ -12,6 +12,7 @@ jobs:
               uses: actions/setup-node@v1
 
             - name: Run CI
+              working-directory: ./frontend
               run: |
                   cd frontend/
                   npm install
