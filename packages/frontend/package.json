@@ -1,0 +1,29 @@
+{
+    "name": "wiki-reborn",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dotkom/wiki-reborn.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dotkom/wiki-reborn/issues"
+    },
+    "homepage": "https://github.com/dotkom/wiki-reborn#readme",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint src --ext .ts,.tsx",
+        "format": "npm run lint -- --fix"
+    },
+    "dependencies": {
+        "next": "^9.5.4",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
