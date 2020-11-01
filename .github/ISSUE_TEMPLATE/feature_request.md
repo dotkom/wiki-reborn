@@ -1,3 +1,12 @@
+---
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 - Start-date: DD-MM-YYYY
 
 ## Summary
@@ -28,4 +37,3 @@
 
 > Optional, but suggested for first drafts. What parts of the design are still
 TBD?
-
