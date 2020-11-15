@@ -28,8 +28,6 @@
         "next": "^9.5.4",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
-<<<<<<< HEAD:packages/frontend/package.json
-=======
     },
     "devDependencies": {
         "@graphql-codegen/cli": "^1.17.10",
@@ -48,9 +46,5 @@
         "typescript": "^4.0.3",
         "@apollo/client": "^3.2.4",
         "graphql": "^15.3.0"
-<<<<<<< HEAD:packages/frontend/package.json
->>>>>>> ce540e9f41cd83ebf035151bd3715bf78be53c60:frontend/package.json
-=======
->>>>>>> ce540e9f41cd83ebf035151bd3715bf78be53c60:frontend/package.json
     }
 }
