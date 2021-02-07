@@ -15,9 +15,9 @@ services:
         ports:
             - "27017:27017"
 
-    strapi:
+    backend:
         image: strapi/strapi
-        container_name: strapi
+        container_name: backend
         restart: unless-stopped
         env_file: .env
         environment:
@@ -27,12 +27,13 @@ services:
             DATABASE_PORT: ${DATABASE_PORT}
             DATABASE_USERNAME: ${DATABASE_USERNAME}
             DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-        #    links:
-        #      - mongo:mongo
         networks:
             - strapi-app-network
+            - graphql-network
+        depends_on:
+            - mongo
         volumes:
-            - ./backend:/srv/backend
+            - ./backend:/srv/app
         ports:
             - "1337:1337"
 
