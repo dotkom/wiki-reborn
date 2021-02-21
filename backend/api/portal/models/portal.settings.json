@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portals",
+  "info": {
+    "name": "Portal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "online",
+        "committee"
+      ]
+    }
+  }
+}
