@@ -1,0 +1,18 @@
+.landingpage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+.blueblock{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100vw;
+    background: #0D5474;
+}
+
+.button {
+    display: grid;
+    justify-self: center;
+}
