@@ -11,13 +11,14 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "sharp": "^0.27.1",
     "strapi": "3.4.6",
     "strapi-admin": "3.4.6",
     "strapi-connector-mongoose": "3.4.6",
     "strapi-plugin-content-manager": "3.4.6",
     "strapi-plugin-content-type-builder": "3.4.6",
     "strapi-plugin-email": "3.4.6",
-    "strapi-plugin-graphql": "3.4.6",
+    "strapi-plugin-graphql": "^3.4.6",
     "strapi-plugin-upload": "3.4.6",
     "strapi-plugin-users-permissions": "3.4.6",
     "strapi-utils": "3.4.6"
@@ -26,7 +27,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "4eb06cf4-7226-4889-a15d-5d81792018b8"
+    "uuid": "3e9a3223-4204-4642-9aad-8a1be4b9dd18"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

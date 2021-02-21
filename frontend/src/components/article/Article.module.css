@@ -1,0 +1,20 @@
+.title {
+    font-weight: 100;
+}
+
+.article_wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article_wrapper small {
+    margin-right: 15px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+}
