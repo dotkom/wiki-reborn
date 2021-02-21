@@ -24,12 +24,15 @@
     },
     "dependencies": {
         "@apollo/client": "^3.2.4",
+        "@dotkomonline/design-system": "^0.22.0",
         "graphql": "^15.3.0",
         "next": "^9.5.4",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.2.1"
     },
     "devDependencies": {
+        "@apollo/client": "^3.2.4",
         "@graphql-codegen/cli": "^1.17.10",
         "@graphql-codegen/typescript": "^1.17.10",
         "@types/node": "^14.11.5",
@@ -42,9 +45,8 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.21.3",
         "eslint-plugin-react-hooks": "^4.1.2",
+        "graphql": "^15.3.0",
         "prettier": "^2.1.2",
-        "typescript": "^4.0.3",
-        "@apollo/client": "^3.2.4",
-        "graphql": "^15.3.0"
+        "typescript": "^4.0.3"
     }
 }

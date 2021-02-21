@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import { NextPage } from "next";
 import { ARTICLES_QUERY } from "../apollo/query";
 //import { Layout } from "../components/layout";
-import {LandingPage} from "../components/landingpage/index";
+import {LandingPage} from "../containers/landingpage/index";
 import { Query } from "../types";
 
 const Home: NextPage = () => {
