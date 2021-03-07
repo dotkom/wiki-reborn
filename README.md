@@ -16,3 +16,5 @@ MONGO_INITDB_ROOT_PASSWORD=password
 ```
 
 Then run `docker-compose up`.
+
+Then go to port 1337/admin -> settings -> roles -> public and check all boxes

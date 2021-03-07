@@ -23,6 +23,29 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+      "type": "text"
+    },
+    "protection_level": {
+      "type": "enumeration",
+      "enum": [
+        "protected",
+        "limited",
+        "open"
+      ]
+    },
+    "contributors": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "history": {
+      "type": "json"
+    },
+    "views": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "portal": {
+      "model": "portal"
     }
   }
 }
