@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
+
+:root {
+    --online-blue: #0d5474;
+    --online-blue-dark: #093b51;
+    --online-orange: #f9b759;
+    --text-color: #333333;
+    --background-color: #fefefe;
+    --online-light-blue: #2ac6f9;
+    --gray: #808080;
+    --light-gray: #c3c3c3;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

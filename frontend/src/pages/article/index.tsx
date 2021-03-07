@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
 const Article: NextPage = () => {
-    return <>Generic Article page</>;
+    return <>Generisk Artikkel</>;
 };
 
 export default Article;

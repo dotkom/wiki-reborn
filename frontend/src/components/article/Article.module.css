@@ -1,9 +1,13 @@
+.main {
+}
+
 .title {
+    font-family: "Source Serif Pro", serif;
     font-weight: 100;
 }
 
 .article_wrapper {
-    max-width: 800px;
+    max-width: 80ch;
     margin: 0 auto;
 }
 
@@ -17,4 +21,5 @@
 }
 
 .container {
+    line-height: 1.5;
 }

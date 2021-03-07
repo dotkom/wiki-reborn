@@ -17,9 +17,13 @@ const ArticleBySlug: NextPage<IArticleBySlug> = ({ slug }) => {
     if (error) return <>Error... </>;
 
     if (Object.keys(data.articles).length != 0) {
-        return data.articles.map((article: ArticleType) => <Article key={article.id} data={article} />);
+        return data.articles.map((article: ArticleType) => (
+            <>
+                <Article key={article.id} data={article} />
+            </>
+        ));
     }
-    return <h2>Article not found</h2>;
+    return <h2>Artikkel ikke funnet</h2>;
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
