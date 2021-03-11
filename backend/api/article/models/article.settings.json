@@ -23,7 +23,6 @@
       "type": "uid",
       "targetField": "title",
       "required": true
-      "type": "text"
     },
     "protection_level": {
       "type": "enumeration",
