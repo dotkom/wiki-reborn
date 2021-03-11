@@ -17,11 +17,7 @@ const ArticleBySlug: NextPage<IArticleBySlug> = ({ slug }) => {
     if (error) return <>Error... </>;
 
     if (Object.keys(data.articles).length != 0) {
-        return data.articles.map((article: ArticleType) => (
-            <>
-                <Article key={article.id} data={article} />
-            </>
-        ));
+        return <Article key={data.articles[0].id} data={data.articles[0]} />;
     }
     return <h2>Artikkel ikke funnet</h2>;
 };
