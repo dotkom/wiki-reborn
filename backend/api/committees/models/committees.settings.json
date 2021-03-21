@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "committees",
+  "info": {
+    "name": "Committees"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
