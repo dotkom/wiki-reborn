@@ -85,13 +85,13 @@ export const Links = ({ element }: any) => {
     console.log(data);
     return isLocalPath ? (
         <>
-            <ReactTooltip place="right" className={styles.hover_class} delayHide={1000} effect="solid" id="preview">
+            <ReactTooltip place="right" className={styles.hover_class} effect="solid" id={`${slug}-preview`}>
                 {data
                     ? data.articles.length != 0
                         ? data.articles.map((article: Article) => (
                               <>
                                   <h3>{article.title}</h3>
-                                  <p>{String(article.body).substr(0, 100)}</p>
+                                  <p>{article.excerpt}</p>
                               </>
                           ))
                         : "Kunne ikke forhåndsvise artikkelen"
@@ -102,7 +102,7 @@ export const Links = ({ element }: any) => {
                 </Link>
             </ReactTooltip>
             <Link href={element.href}>
-                <a data-tip data-for="preview">
+                <a data-tip data-for={`${slug}-preview`}>
                     {element.children}
                 </a>
             </Link>
