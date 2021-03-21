@@ -9,7 +9,6 @@ interface IScrollspy {
 
 const Scrollspy: FC<IScrollspy> = ({ data }) => {
     const subheadings = data.match(/\B\##\s+\w\w+.*\b/g);
-    const count = subheadings ? subheadings.length : 0;
 
     const setActiveElement = (e: any) => {
         const nodes = document.querySelectorAll(`.${styles.scrollspy_active}`);

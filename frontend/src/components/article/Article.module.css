@@ -23,3 +23,21 @@
 .container {
     line-height: 1.5;
 }
+
+.hover_class {
+    pointer-events: auto !important;
+    background-color: var(--background-color) !important;
+    border: 1px solid var(--gray) !important;
+    color: var(--text-color) !important;
+    max-width: 300px;
+}
+
+.hover_class:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.read_more {
+    display: block;
+    text-align: right;
+}

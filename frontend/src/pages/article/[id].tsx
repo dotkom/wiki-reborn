@@ -2,7 +2,6 @@ import { useQuery } from "@apollo/client";
 import { GetServerSideProps, NextPage } from "next";
 import { GET_ARTICLE_BY_SLUG } from "../../apollo/query";
 import { Article } from "../../components/article";
-import { Article as ArticleType } from "../../types";
 
 interface IArticleBySlug {
     slug: string;
