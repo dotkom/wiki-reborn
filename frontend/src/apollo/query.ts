@@ -10,3 +10,14 @@ export const ARTICLES_QUERY = gql`
         }
     }
 `;
+
+export const PORTAL_QUERY = gql`
+    query getPortal($slug: String!) {
+        portals(where: { slug: $slug }) {
+            id
+            category
+            description
+            name
+        }
+    }
+`;
