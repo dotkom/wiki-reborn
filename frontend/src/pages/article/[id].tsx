@@ -16,10 +16,16 @@ const ArticleBySlug: NextPage<IArticleBySlug> = ({ slug }) => {
     if (loading)
         return (
             <>
-                <div>
+                <div className="skeleton_wrapper">
                     <h1>
                         <Skeleton />
                     </h1>
+                    <Skeleton count={10} />
+                    <br />
+                    <br />
+                    <Skeleton count={10} />
+                    <br />
+                    <br />
                     <Skeleton count={10} />
                 </div>
             </>
