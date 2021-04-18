@@ -1,6 +1,4 @@
 import { FC } from "react";
-import LockIcon from "@material-ui/icons/Lock";
-import SearchIcon from "@material-ui/icons/Search";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faSearch } from "@fortawesome/free-solid-svg-icons";

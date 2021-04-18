@@ -28,7 +28,7 @@ const ArticleComponent: FC<IArticleComponent> = ({ data }) => {
     };
 
     return (
-        <div className={styles.main}>
+        <div key={data.id} className={styles.main}>
             <Scrollspy data={data.body} />
 
             <div key={data.id} className={styles.article_wrapper}>
@@ -37,12 +37,12 @@ const ArticleComponent: FC<IArticleComponent> = ({ data }) => {
                     <small>Publisert: {dateParser(data.published_at)}</small>
 
                     <small>
-                        {!dateEquality(data.updatedAt, data.published_at)
-                            ? "Oppdatert: " + dateParser(data.updatedAt)
+                        {!dateEquality(data.updated_at, data.published_at)
+                            ? "Oppdatert: " + dateParser(data.updated_at)
                             : ""}
                     </small>
                     <small>
-                        <Link href={data.slug}>
+                        <Link key={data.slug} href={data.slug}>
                             <a>Rediger</a>
                         </Link>
                     </small>
@@ -82,17 +82,16 @@ export const Links = ({ element }: any) => {
         variables: { slug: slug },
     });
 
-    console.log(data);
     return isLocalPath ? (
         <>
             <ReactTooltip place="right" className={styles.hover_class} effect="solid" id={`${slug}-preview`}>
                 {data
                     ? data.articles.length != 0
-                        ? data.articles.map((article: Article) => (
-                              <>
+                        ? data.articles.map((article: Article, key: string) => (
+                              <div key={key}>
                                   <h3>{article.title}</h3>
                                   <p>{article.excerpt}</p>
-                              </>
+                              </div>
                           ))
                         : "Kunne ikke forhåndsvise artikkelen"
                     : null}

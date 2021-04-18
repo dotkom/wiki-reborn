@@ -1,9 +1,10 @@
 {
   "name": "root",
   "private": true,
-  "scripts": {},
-  "dependencies": {
-    "backend": "file:packages/backend",
-    "wiki-reborn": "file:packages/frontend"
-  }
+  "scripts": {
+    "frontend": "cd frontend/ && npm run dev",
+    "backend": "cd backend/ && npm run develop",
+    "dev": "npm run frontend & npm run backend"
+  },
+  "dependencies": {}
 }

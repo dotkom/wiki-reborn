@@ -9,7 +9,7 @@ export const ARTICLES_QUERY = gql`
             slug
             excerpt
             published_at
-            updatedAt
+            updated_at
         }
     }
 `;
@@ -23,7 +23,7 @@ export const GET_ARTICLE_BY_SLUG = gql`
             slug
             excerpt
             published_at
-            updatedAt
+            updated_at
         }
     }
 `;
