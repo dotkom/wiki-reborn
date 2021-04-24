@@ -2,6 +2,7 @@ import { useQuery } from "@apollo/client";
 import { NextPage } from "next";
 import { ARTICLES_QUERY } from "../apollo/query";
 import { Article } from "../types";
+import Link from "next/link";
 
 const Home: NextPage = () => {
     const { loading, error, data } = useQuery(ARTICLES_QUERY);
@@ -11,16 +12,22 @@ const Home: NextPage = () => {
 
     return (
         <>
-            {data.articles.map((article: Article, key: string) => (
-                <div key={key}>
-                    <h1>{article.title}</h1>
-                    <h3>Article-ID: {article.id}</h3>
-                    <p>{article.body}</p>
-                    <span>
-                        <strong>{article.published_at}</strong>
-                    </span>
-                </div>
-            ))}
+            <h1>Artikler: </h1>
+            <div className="article_preview_wrapper">
+                {data.articles.map((article: Article, key: string) => (
+                    <div className="article_preview">
+                        <Link href={`/article/${article.slug}`}>
+                            <div key={key}>
+                                <h1>{article.title}</h1>
+                                <p>{article.excerpt}</p>
+                                <span>
+                                    <strong>{article.published_at}</strong>
+                                </span>
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </>
     );
 };

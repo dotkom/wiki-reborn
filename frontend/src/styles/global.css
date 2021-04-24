@@ -28,3 +28,21 @@ body {
     margin: 0 auto;
     max-width: 80ch;
 }
+
+.article_preview_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.article_preview {
+    max-width: 40ch;
+    border-radius: 10px;
+    padding: 0px 10px 15px 10px;
+    box-shadow: 4px 7px 17px 0px #00000029;
+}
+
+.article_preview:hover {
+    cursor: pointer;
+}
