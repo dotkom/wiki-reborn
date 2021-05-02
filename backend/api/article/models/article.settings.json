@@ -45,6 +45,11 @@
     },
     "portal": {
       "model": "portal"
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "minLength": 25
     }
   }
 }

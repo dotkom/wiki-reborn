@@ -1,6 +1,4 @@
 import { FC } from "react";
-import LockIcon from "@material-ui/icons/Lock";
-import SearchIcon from "@material-ui/icons/Search";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +13,11 @@ const Navbar: FC = () => {
             <div className={styles.navbar}>
                 <div className={styles.navbar_content}>
                     <div className={styles.navbar_left}>
-                        <img src="/assets/images/Online_hvit.png" alt="Logo" />
+                        <Link href={`/`}>
+                            <a>
+                                <img src="/assets/images/Online_hvit.png" alt="Logo" />
+                            </a>
+                        </Link>
                     </div>
                     <div className={styles.navbar_right}>
                         <ul className={styles.menu_links}>
@@ -26,16 +28,24 @@ const Navbar: FC = () => {
                                 </div>
                             </div>
                             <li className={styles.active}>
-                                <Link href={`/`}>Hjem</Link>
+                                <Link href={`/`}>
+                                    <a>Hjem</a>
+                                </Link>
                             </li>
                             <li>
-                                <Link href={`/`}>Bidra</Link>
+                                <Link href={`/`}>
+                                    <a>Bidra</a>
+                                </Link>
                             </li>
                             <li>
-                                <Link href={`/`}>Bidra</Link>
+                                <Link href={`/`}>
+                                    <a>Bidra</a>
+                                </Link>
                             </li>
                             <li>
-                                <Link href={`/`}>Bidra</Link>
+                                <Link href={`/`}>
+                                    <a>Bidra</a>
+                                </Link>
                             </li>
                             <div className={`${styles.login_button} flex_center`}>
                                 <FontAwesomeIcon icon={faLock} />

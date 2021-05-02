@@ -118,3 +118,7 @@ dist
 
 # Exclude DS_Store file (Mac specific)
 .DS_Store
+
+# Exclude local mongo-db database
+.mongo-db
+.sqlite.env
