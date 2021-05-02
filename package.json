@@ -5,6 +5,5 @@
     "frontend": "cd frontend/ && npm run dev",
     "backend": "cd backend/ && npm run develop",
     "dev": "npm run frontend & npm run backend"
-  },
-  "dependencies": {}
+  }
 }

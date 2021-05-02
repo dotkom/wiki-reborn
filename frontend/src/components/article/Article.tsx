@@ -37,8 +37,8 @@ const ArticleComponent: FC<IArticleComponent> = ({ data }) => {
                     <small>Publisert: {dateParser(data.published_at)}</small>
 
                     <small>
-                        {!dateEquality(data.updated_at, data.published_at)
-                            ? "Oppdatert: " + dateParser(data.updated_at)
+                        {!dateEquality(data.updatedAt, data.published_at)
+                            ? "Oppdatert: " + dateParser(data.updatedAt)
                             : ""}
                     </small>
                     <small>

@@ -1,4 +1,3 @@
-import { DocumentNode } from "graphql";
 import { FC, useEffect, useState } from "react";
 
 import styles from "./Scrollspy.module.css";
@@ -10,17 +9,17 @@ interface IScrollspy {
 const Scrollspy: FC<IScrollspy> = ({ data }) => {
     const subheadings = data.match(/\B\##\s+\w\w+.*\b/g);
 
-    const [headings, setHeadings] = useState([]);
+    const [headings, setHeadings] = useState<Array<HTMLElement | null>>([]);
 
     useEffect(() => {
         let headings = awaitElements(subheadings);
-        headings.then((element) => {
-            setHeadings(element);
+        headings.then((elements: Array<HTMLElement | null>) => {
+            setHeadings(elements);
         });
     }, []);
 
     const awaitElements = async (subheadings: RegExpMatchArray | null) => {
-        let elements: Array<Object | null> = [];
+        let elements: Array<HTMLElement | null> = [];
 
         subheadings?.forEach((headingId) => {
             let heading = headingId.split(" ");
@@ -44,12 +43,14 @@ const Scrollspy: FC<IScrollspy> = ({ data }) => {
         e.target.parentNode.classList.add(`${styles.scrollspy_active}`);
     };
 
-    headings.forEach((element: HTMLElement) => {
-        window.addEventListener("scroll", function () {
-            if (window.scrollY >= element.offsetTop && window.scrollY <= element.offsetTop + element.offsetHeight) {
-                setActiveElementByScroll(element);
-            }
-        });
+    headings.forEach((element: HTMLElement | null) => {
+        if (element) {
+            window.addEventListener("scroll", function () {
+                if (window.scrollY >= element.offsetTop && window.scrollY <= element.offsetTop + element.offsetHeight) {
+                    setActiveElementByScroll(element);
+                }
+            });
+        }
     });
 
     const setActiveElementByScroll = (element: HTMLElement) => {
