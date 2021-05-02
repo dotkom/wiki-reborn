@@ -1,0 +1,30 @@
+.scrollspy {
+    position: fixed;
+    right: 30px;
+}
+
+.scrollspy ul {
+    padding: 0 0 0 10px;
+    line-height: 22px;
+    font-size: 0.9em;
+}
+
+.scrollspy ul li {
+    list-style: none;
+    border-left: 3px solid var(--light-gray);
+    padding-left: 10px;
+}
+
+.scrollspy ul li:not(.scrollspy_active) a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.scrollspy_active a {
+    color: var(--online-blue);
+}
+
+.scrollspy_active {
+    border-left: 3px solid var(--online-blue) !important;
+    text-decoration: underline;
+}

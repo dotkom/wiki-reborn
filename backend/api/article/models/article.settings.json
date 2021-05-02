@@ -12,10 +12,17 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "body": {
-      "type": "text"
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     },
     "protection_level": {
       "type": "enumeration",
@@ -38,6 +45,11 @@
     },
     "portal": {
       "model": "portal"
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "minLength": 25
     }
   }
 }

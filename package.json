@@ -2,11 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna exec npm install",
-    "dev": "lerna run dev"
-  },
-  "dependencies": {
-    "backend": "file:packages/backend",
-    "wiki-reborn": "file:packages/frontend"
+    "frontend": "cd frontend/ && npm run dev",
+    "backend": "cd backend/ && npm run develop",
+    "dev": "npm run frontend & npm run backend"
   }
 }

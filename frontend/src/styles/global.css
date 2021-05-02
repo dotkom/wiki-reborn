@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
+
+:root {
+    --online-blue: #0d5474;
+    --online-blue-dark: #093b51;
+    --online-orange: #f9b759;
+    --text-color: #333333;
+    --background-color: #fefefe;
+    --online-light-blue: #2ac6f9;
+    --gray: #808080;
+    --light-gray: #c3c3c3;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skeleton_wrapper {
+    margin: 0 auto;
+    max-width: 80ch;
+}
+
+.article_preview_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.article_preview {
+    max-width: 40ch;
+    border-radius: 10px;
+    padding: 0px 10px 15px 10px;
+    box-shadow: 4px 7px 17px 0px #00000029;
+}
+
+.article_preview:hover {
+    cursor: pointer;
+}

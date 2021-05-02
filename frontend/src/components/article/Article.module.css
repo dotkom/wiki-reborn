@@ -1,0 +1,43 @@
+.main {
+}
+
+.title {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 100;
+}
+
+.article_wrapper {
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.article_wrapper small {
+    margin-right: 15px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    line-height: 1.5;
+}
+
+.hover_class {
+    pointer-events: auto !important;
+    background-color: var(--background-color) !important;
+    border: 1px solid var(--gray) !important;
+    color: var(--text-color) !important;
+    max-width: 300px;
+}
+
+.hover_class:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.read_more {
+    display: block;
+    text-align: right;
+}

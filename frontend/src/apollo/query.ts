@@ -6,7 +6,24 @@ export const ARTICLES_QUERY = gql`
             id
             title
             body
+            slug
+            excerpt
             published_at
+            updatedAt
+        }
+    }
+`;
+
+export const GET_ARTICLE_BY_SLUG = gql`
+    query($slug: String!) {
+        articles(where: { slug: $slug }) {
+            id
+            title
+            body
+            slug
+            excerpt
+            published_at
+            updatedAt
         }
     }
 `;
